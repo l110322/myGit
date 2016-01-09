@@ -1,0 +1,4 @@
+export MPLCONFIGDIR=/tmp/;
+rm -rf /opt/lampp/htdocs/think/data/Atap/14523724804167/cluster/;
+mkdir /opt/lampp/htdocs/think/data/Atap/14523724804167/cluster/;
+python /opt/lampp/htdocs/think/Apps/Atap/bin/functional_analysis/filter_and_cluster.py  /opt/lampp/htdocs/think/data/Atap/14523724804167/summit /opt/lampp/htdocs/think/data/Atap/14523724804167/nolambda_summit /opt/lampp/htdocs/think/data/Atap/14523724804167/DMR /opt/lampp/htdocs/think/data/Atap/14523724804167/chipChip -c -o /opt/lampp/htdocs/think/data/Atap/14523724804167/cluster/ --overlap=3 --overlap_normalized=0.01 -p 0.05 --fc=2 --inflation=1.2 >/opt/lampp/htdocs/think/data/Atap/14523724804167/cluster//cluster.log 2>&1
